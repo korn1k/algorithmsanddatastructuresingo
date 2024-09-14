@@ -97,6 +97,7 @@ func (list *SinglyLinkedList) DeleteAt(index int) error {
 }
 
 func SinglyLinkedListExample() {
+	fmt.Println("Singly linked list example")
 	list := &SinglyLinkedList{}
 
 	list.InsertAtBeginning("potato")

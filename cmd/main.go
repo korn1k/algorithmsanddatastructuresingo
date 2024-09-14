@@ -39,6 +39,7 @@ func main() {
 			array.StackArrayExample()
         case 2:
             linkedlist.SinglyLinkedListExample()
+            linkedlist.DoublyLinkedListExample()
         case 3:
             fmt.Println("Exiting from the selection")
             return
