@@ -8,6 +8,7 @@ import (
 
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/array"
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/linkedlist"
+	"github.com/korn1k/algorithmsanddatastructuresingo/internal/recursion"
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/sort"
 )
 
@@ -19,7 +20,8 @@ func main() {
         fmt.Println("1. Arrays")
         fmt.Println("2. Stacks")
         fmt.Println("3. Sort algorithms")
-        fmt.Println("4. Exit")
+        fmt.Println("4. Recursion")
+        fmt.Println("5. Exit")
         fmt.Print("Enter your choice by specifying number: ")
 
         input, err := reader.ReadString('\n')
@@ -49,6 +51,9 @@ func main() {
             sort.QuickSortExample()
             sort.BucketSortExample()
         case 4:
+            recursion.FactorialRecursionExample()
+            recursion.FibonacciRecursionExample()
+        case 5:
             fmt.Println("Exiting from the selection")
             return
         default:
