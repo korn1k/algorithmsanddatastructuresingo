@@ -7,6 +7,7 @@ import (
 	"strconv"
 
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/array"
+	"github.com/korn1k/algorithmsanddatastructuresingo/internal/hashtable"
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/linkedlist"
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/recursion"
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/sort"
@@ -21,7 +22,8 @@ func main() {
         fmt.Println("2. Stacks")
         fmt.Println("3. Sort algorithms")
         fmt.Println("4. Recursion")
-        fmt.Println("5. Exit")
+        fmt.Println("5. Hashtable")
+        fmt.Println("6. Exit")
         fmt.Print("Enter your choice by specifying number: ")
 
         input, err := reader.ReadString('\n')
@@ -54,6 +56,8 @@ func main() {
             recursion.FactorialRecursionExample()
             recursion.FibonacciRecursionExample()
         case 5:
+            hashtable.HashTableExample()
+        case 6:
             fmt.Println("Exiting from the selection")
             return
         default:
