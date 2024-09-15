@@ -8,6 +8,7 @@ import (
 
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/array"
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/linkedlist"
+	"github.com/korn1k/algorithmsanddatastructuresingo/internal/sort"
 )
 
 func main() {
@@ -17,7 +18,8 @@ func main() {
         fmt.Println("Menu:")
         fmt.Println("1. Arrays")
         fmt.Println("2. Stacks")
-        fmt.Println("3. Exit")
+        fmt.Println("3. Sort algorithms")
+        fmt.Println("4. Exit")
         fmt.Print("Enter your choice by specifying number: ")
 
         input, err := reader.ReadString('\n')
@@ -42,6 +44,11 @@ func main() {
             linkedlist.DoublyLinkedListExample()
             linkedlist.QueueLinkedListExample()
         case 3:
+            sort.InsertSortExample()
+            sort.MergeSortExample()
+            sort.QuickSortExample()
+            sort.BucketSortExample()
+        case 4:
             fmt.Println("Exiting from the selection")
             return
         default:
