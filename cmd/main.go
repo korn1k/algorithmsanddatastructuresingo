@@ -40,6 +40,7 @@ func main() {
         case 2:
             linkedlist.SinglyLinkedListExample()
             linkedlist.DoublyLinkedListExample()
+            linkedlist.QueueLinkedListExample()
         case 3:
             fmt.Println("Exiting from the selection")
             return

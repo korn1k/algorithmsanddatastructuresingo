@@ -102,6 +102,7 @@ func (list *DoublyLinkedList) DisplayListBackward() {
 }
 
 func DoublyLinkedListExample() {
+	fmt.Println("Doubly linked list example")
 	list := &DoublyLinkedList{}
 
 	list.InsertAtBeginning("yellow")
