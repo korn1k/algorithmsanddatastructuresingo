@@ -7,6 +7,9 @@ import (
 	"strconv"
 
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/array"
+	"github.com/korn1k/algorithmsanddatastructuresingo/internal/backtracking"
+	"github.com/korn1k/algorithmsanddatastructuresingo/internal/binarysearch"
+	"github.com/korn1k/algorithmsanddatastructuresingo/internal/binarytree"
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/hashtable"
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/linkedlist"
 	"github.com/korn1k/algorithmsanddatastructuresingo/internal/recursion"
@@ -23,7 +26,10 @@ func main() {
         fmt.Println("3. Sort algorithms")
         fmt.Println("4. Recursion")
         fmt.Println("5. Hashtable")
-        fmt.Println("6. Exit")
+        fmt.Println("6. Binary search")
+        fmt.Println("7. Binary tree")
+        fmt.Println("8. Backtracking")
+        fmt.Println("9. Exit")
         fmt.Print("Enter your choice by specifying number: ")
 
         input, err := reader.ReadString('\n')
@@ -58,6 +64,16 @@ func main() {
         case 5:
             hashtable.HashTableExample()
         case 6:
+            binarysearch.ArrayBinarySearchExample()
+        case 7:
+            binarytree.BinaryTreeExample()
+            binarytree.BSTExample()
+            binarytree.BFSExample()
+            binarytree.BSTMapExample()
+            binarytree.BSTSetExample()
+        case 8:
+            backtracking.BinaryTreeDFSExample()
+        case 9:
             fmt.Println("Exiting from the selection")
             return
         default:
